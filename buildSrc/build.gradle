@@ -7,6 +7,7 @@ dependencies {
 	implementation "com.google.code.gson:gson:+"
 	implementation "it.unimi.dsi:fastutil:+"
 	implementation "commons-io:commons-io:+"
+	implementation "org.apache.httpcomponents:httpmime:+"
 	implementation "com.github.jonafanho:Minecraft-Mod-API-Tools:master-SNAPSHOT"
 }
 
