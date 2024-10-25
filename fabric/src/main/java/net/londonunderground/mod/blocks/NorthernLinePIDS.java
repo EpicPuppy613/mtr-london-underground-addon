@@ -12,9 +12,10 @@ import javax.annotation.Nonnull;
 public class NorthernLinePIDS extends BlockPIDSHorizontalBase {
 
 	private static final int MAX_ARRIVALS = 3;
+	private static final String TYPE = "tooltip.londonunderground.pids_northern";
 
 	public NorthernLinePIDS() {
-		super(MAX_ARRIVALS);
+		super(MAX_ARRIVALS, TYPE);
 	}
 
 	@Nonnull
@@ -35,7 +36,7 @@ public class NorthernLinePIDS extends BlockPIDSHorizontalBase {
 	public static class TileEntityNorthernLinePIDS extends BlockEntityHorizontalBase {
 
 		public TileEntityNorthernLinePIDS(BlockPos pos, BlockState state) {
-			super(MAX_ARRIVALS, BlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY.get(), pos, state);
+			super(MAX_ARRIVALS, "", BlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY.get(), pos, state);
 		}
 
 		@Override
